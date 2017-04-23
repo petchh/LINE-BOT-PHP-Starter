@@ -39,18 +39,10 @@ if (!is_null($events['events'])) {
 					'type'=>'text',
 					'text' =>'บอท (bot) คือโปรแกรมอัตโนมัติ สำหรับทำหน้าที่อย่างใดอย่างหนึ่ง บนอินเทอร์เน็ต ซึ่งย่อมาจากคำว่าโรบอต (robot)'
 				];
-			else if((eregi ( "สวัสดี", $text, $regs ))or(eregi ( "Hello", $text, $regs ))){
+			}else if((eregi ( "Hello", $text, $regs ))or(eregi ( "สวัสดี", $text, $regs ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'สวัสดีจ้าา'
-				];
-			}else if((eregi ( "คศ101", $text, $regs ))or(eregi ( "แคลคูลัส 1", $text, $regs ))){
-				$messages = [
-					'type'=>'text',
-					'text' =>'คศ101	แคลคูลัส 1
-	Course Description:
-	ลิมิตและความต่อเนื่อง อนุพันธ์ การประยุกต์ของอนุพันธ์ ดิฟเฟอเรนเชียลและอินทริกัลป์ไม่จำกัดเขต อินทริกัลป์จำกัดเขต และการประยุกต์ อนุพันธ์ย่อย
-	Limit and continuity of functions, the derivative of algebraic functions and transcendental functions, the indefinite integrals and techniques of integration, and the definite integrals with applications
+					'text' =>'สวัสดีครับ
 '
 				];
 			}else if((eregi ( "ลงทะเบียนต่ำกว่า 9 หน่วย", $text, $regs ))or(eregi ( "ลงทะเบียนน้อยกว่า 9 หน่วย", $text, $regs ))){
