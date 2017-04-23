@@ -27,7 +27,12 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => $ans
 			];
-
+			
+			if((eregi ( "สวัสดี", $text, $regs ))or(eregi ( "สวัสดี", $text, $regs ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'สวัสดีจ้าาา'
+				];
 			
 			if((eregi ( "วิธีลงทะเบียน", $text, $regs ))or(eregi ( "การลงทะเบียน", $text, $regs ))){
 				$messages = [
