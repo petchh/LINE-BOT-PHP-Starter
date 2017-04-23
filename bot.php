@@ -28,7 +28,7 @@ if (!is_null($events['events'])) {
 				'text' => $ans
 			];
 			
-			if((eregi ( "สวัสดี", $text, $regs ))or(eregi ( "สวัสดี", $text, $regs ))){
+			if((eregi ( "สวัสดี", $text, $regs ))or(eregi ( "Hello", $text, $regs ))){
 				$messages = [
 					'type'=>'text',
 					'text' =>'สวัสดีจ้าาา'
