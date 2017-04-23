@@ -55,10 +55,10 @@ if (!is_null($events['events'])) {
 					'type'=>'text',
 					'text' =>'ถ้าอยากให้ใครดีกับเราเราต้องทำดีกับเขาก่อนดูนะครับ'
 				];
-			}else if((eregi ( "ทะเลาะกับแฟน", $text, $regs ))or(eregi ( "ผิดกับแฟน", $text, $regs ))){
+			}else if((eregi ( "โดนเท", $text, $regs ))or(eregi ( "หลอกให้รัก", $text, $regs ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'การทะเลาะกันไม่ทำให้ใครมีความสุขหรอกนะครับ ลองใจเย็นๆแล้วคุยกันดีๆนะ ^^'
+					'text' =>'สู้ๆนะเป็นกำลังใจให้'
 				];
 			}else if((eregi ( "ชั่วโมงกิจกรรม", $text, $regs ))or(eregi ( "เวลาโมงกิจกรรม", $text, $regs ))){
 				$messages = [
