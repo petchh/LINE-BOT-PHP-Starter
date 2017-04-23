@@ -29,10 +29,10 @@ if (!is_null($events['events'])) {
 			];
 			
 			
-			if((eregi ( "วิธีลงทะเบียน", $text, $regs ))or(eregi ( "การลงทะเบียน", $text, $regs ))){
+			if((eregi ( "cs442", $text ))or(eregi ( "คพ442", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'ทำตามขั้นตอนตามนี้เลยครับ http://reg.mju.ac.th/enrollguide.htm'
+					'text' =>'ลองไปดูในนี้นะ มีรายละเอียดอยู่ http://reg.mju.ac.th/enrollguide.htm'
 				];
 			}else if((eregi ( "Chatbot", $text, $regs ))or(eregi ( "Line bot", $text, $regs ))){
 				$messages = [
