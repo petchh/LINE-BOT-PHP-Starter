@@ -45,25 +45,37 @@ if (!is_null($events['events'])) {
 					'text' =>'สวัสดีครับ
 '
 				];
-			}else if((eregi ( "ลงทะเบียนต่ำกว่า 9 หน่วย", $text, $regs ))or(eregi ( "ลงทะเบียนน้อยกว่า 9 หน่วย", $text, $regs ))){
+			}else if((eregi ( "อยากกลับบ้าน", $text ))or(eregi ( "คิดถึงบ้าน", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'แนะนำให้ดาวน์โหลด มจท32 ที่เว็บ education.mju.ac.th แล้วยื่นที่งานตารางสอนครับ'
+					'text' =>'จองตั๋วเครื่องบินสิครับ รถทัวร์ก็ได้นะ'
 				];
 			}else if((eregi ( "ขาดความอบอุ่น", $text, $regs ))or(eregi ( "ต้องการคนสนใจ", $text, $regs ))or(eregi ( "อยากให้มีคนสนใจ", $text, $regs ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'ถ้าอยากให้ใครดีกับเราเราต้องทำดีกับเขาก่อนดูนะครับ'
+					'text' =>'ถ้าอยากให้ใครดีกับเราเราต้องทำดีกับเขาก่อนดูครับ'
 				];
 			}else if((eregi ( "โดนเท", $text ))or(eregi ( "ผู้หญิงทิ้ง", $text ))){
 				$messages = [
 					'type'=>'text',
 					'text' =>'เป็นกำลังใจให้นะ พยายามเข้าล่ะ'
 				];
-			}else if((eregi ( "ชั่วโมงกิจกรรม", $text, $regs ))or(eregi ( "เวลาโมงกิจกรรม", $text, $regs ))){
+			}else if((eregi ( "หน้ากากทุเรียน", $text ))or(eregi ( "The mask singer", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'สามารถตรวจสอบจำนวนชั่วโมงกิจกรรมได้ที่ www.erp.mju.ac.th/student/signin.aspx?/typeAuthentication=1'
+					'text' =>'ดีต่อใจฝุดๆ เพลงเพราะมาก'
+				];
+				
+			}else if((eregi ( "ผู้หญิงชอบคนเลว", $text ))or(eregi ( "ทำดีไปก็เท่านั้น", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'ผู้หญิงจิตใจลึกลับซับซ้อนยิ่งกว่าเขาวงกต คนดีๆมีก็ไม่เลือก ชอบคนเลวได้ไงไม่เข้าใจเหมือนกัน'
+				];
+				
+			}else if((eregi ( "บาย", $text ))or(eregi ( "ลาก่อน", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'บายนะ! เวลาเหงาทักหา Bot นะ'
 				];
 				
 			}
