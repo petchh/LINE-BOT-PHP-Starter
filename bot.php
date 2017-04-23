@@ -39,7 +39,7 @@ if (!is_null($events['events'])) {
 					'type'=>'text',
 					'text' =>'บอท (bot) คือโปรแกรมอัตโนมัติ สำหรับทำหน้าที่อย่างใดอย่างหนึ่ง บนอินเทอร์เน็ต ซึ่งย่อมาจากคำว่าโรบอต (robot)'
 				];
-			}else if((eregi ( "Hello", $text ))or(eregi ( "สวัสดี", $text ))or(eregi ( "ดี", $text ))){
+			}else if((eregi ( "Hello", $text ))or(eregi ( "สวัสดี", $text ))){
 				$messages = [
 					'type'=>'text',
 					'text' =>'สวัสดีครับ
