@@ -34,10 +34,10 @@ if (!is_null($events['events'])) {
 					'type'=>'text',
 					'text' =>'ทำตามขั้นตอนตามนี้เลยครับ http://reg.mju.ac.th/enrollguide.htm'
 				];
-			}else if((eregi ( "Transcript", $text, $regs ))or(eregi ( "ทรานสคริป", $text, $regs ))){
+			}else if((eregi ( "Chatbot", $text, $regs ))or(eregi ( "Line bot", $text, $regs ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'เข้า www.education.mju.ac.th แล้วเลือก เข้าสุ่ระบบนักศึกษาครับ'
+					'text' =>'บอท (bot) คือโปรแกรมอัตโนมัติ สำหรับทำหน้าที่อย่างใดอย่างหนึ่ง บนอินเทอร์เน็ต ซึ่งย่อมาจากคำว่าโรบอต (robot)'
 				];
 			}else if((eregi ( "คศ101", $text, $regs ))or(eregi ( "แคลคูลัส 1", $text, $regs ))){
 				$messages = [
