@@ -82,11 +82,16 @@ if (!is_null($events['events'])) {
 					'text' =>'สั่งพิซซ่ามาทานร้านไหนดี ?
 					1.The Pizza โทร 1112 หรือ 2.Pizza Hut โทร 1150 กด 2'
 				];
-			}else if((eregi ( "ลืมเค้าไม่ได้", $text ))or(eregi ( "ทำไมถึงโดนทิ้ง", $text ))){
+			}else if((eregi ( "ปรึกษาทางด้านการเงิน", $text ))or(eregi ( "การเงิน", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'ผู้หญิงก็แบบนี้ล่ะครับ ตาบอดกันทั้งนั้น'
-				];	
+					'text' =>'ไปที่ www.pd-wealth.com/ ที่ปรึกษาทางด้านการเงินครบวงจรหรือโทร 1235'
+				];
+			}else if((eregi ( "ช่างซ่อมเครื่องใช้ไฟฟ้า", $text ))or(eregi ( "ช่างซ่อมของใช้", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'โทรไปที่เบอร์ 084746XXXX ในเชียงใหม่ หรือ www.fixeletric.com ทั่วประเทศ'
+				];
 			}else if((eregi ( "บาย", $text ))or(eregi ( "ลาก่อน", $text ))){
 				$messages = [
 					'type'=>'text',
