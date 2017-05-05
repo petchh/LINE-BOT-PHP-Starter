@@ -1,5 +1,5 @@
 <?php
-$access_token = 'mdUfi036U4HKokM8zkcdBmj5imHO0bw7lvrCHU6oMuA4y2U+dM0kjKqgpSwYVz6r/5Dn3S7qL+OyYaI2S7YTivOsVtD3Oy9S7yivMUAnvPZxHdPPT6Vkl+LjO3PncXf913PbKdos1qkWz1oOPOCQswdB04t89/1O/w1cDnyilFU=';
+$access_token = 'ySsjC+XvhFPDIyKYsDUQCaMSR5bXUK8evVsio0egSPckkHzcb5RNqLVdCQoawpSsW9UZwQquPihk9R6y0k2XokhC+tE84dI33Vnyv7eIW3OCRomDztQf+vlugYbipmND4JtU37hgv6cLot3QEABlPQdB04t89/1O/w1cDnyilFU=';
 
 
 
@@ -15,6 +15,7 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
+	// 	เดี๋ยวใช้ต่อ	
 			$ans = file_get_contents('http://202.28.37.32/smartcsmju/project_class/Line_IOT/test_php_to_mqtt_js.php?msg='.$text);
 			
 			//$s_ans = file_get_contents('http://202.28.37.32/smartcsmju/Line_INTNINBOT/check_MSG.php?msg='.$strMSG);
@@ -29,10 +30,10 @@ if (!is_null($events['events'])) {
 			];
 			
 			
-			if((eregi ( "cs442", $text ))or(eregi ( "คพ442", $text ))){
+			if((eregi ( "ตำรวจ", $text ))or(eregi ( "เรียกตำรวจ", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'ลองไปดูในนี้นะ มีรายละเอียดอยู่ http://reg.mju.ac.th/enrollguide.htm'
+					'text' =>'โทรเลยเบอร์ 191'
 				];
 			}else if((eregi ( "Chatbot", $text, $regs ))or(eregi ( "Line bot", $text, $regs ))){
 				$messages = [
@@ -45,12 +46,12 @@ if (!is_null($events['events'])) {
 					'text' =>'สวัสดีครับ
 '
 				];
-			}else if((eregi ( "อยากกลับบ้าน", $text ))or(eregi ( "คิดถึงบ้าน", $text ))){
+			}else if((eregi ( "หาช่างประปา", $text ))or(eregi ( "น้ำไม่ไหล", $text ))or(eregi ( "การประปา", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'จองตั๋วเครื่องบินสิครับ รถทัวร์ก็ได้นะ'
+					'text' =>'เรียกประปาโทร 1162 หรือ http://www.pwa.co.th/contactus/telephone ครับ'
 				];
-			}else if((eregi ( "ขาดความอบอุ่น", $text, $regs ))or(eregi ( "ต้องการคนสนใจ", $text, $regs ))or(eregi ( "อยากให้มีคนสนใจ", $text, $regs ))){
+			}else if((eregi ( "หาช่างไฟ", $text, $regs ))or(eregi ( "การไฟฟ้า", $text, $regs ))){
 				$messages = [
 					'type'=>'text',
 					'text' =>'ถ้าอยากให้ใครดีกับเราเราต้องทำดีกับเขาก่อนดูครับ'
@@ -60,27 +61,47 @@ if (!is_null($events['events'])) {
 					'type'=>'text',
 					'text' =>'เป็นกำลังใจให้นะ พยายามเข้าล่ะ'
 				];
-			}else if((eregi ( "หน้ากากทุเรียน", $text ))or(eregi ( "The mask singer", $text ))){
+			}else if((eregi ( "อยากกินไก่", $text ))or(eregi ( "โทรสั่งไก่", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'ดีต่อใจฝุดๆ เพลงเพราะมาก'
+					'text' =>'ไก่อะไรดีล่ะ
+					1. ไก่ KFC โทร 1150 แล้วกด 1
+					2. ไก่ McDonulds โทร 1711 
+					3. ไก่ เชสเตอร์กิลล์ โทร 1125'
 				];
 				
-			}else if((eregi ( "ผู้หญิงชอบคนเลว", $text ))or(eregi ( "ทำดีไปก็เท่านั้น", $text ))){
+			}else if((eregi ( "สั่งพิซซ่า", $text ))or(eregi ( "พิซซ่า", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'ผู้หญิงจิตใจลึกลับซับซ้อนยิ่งกว่าเขาวงกต คนดีๆมีก็ไม่เลือก ชอบคนเลวได้ไงไม่เข้าใจเหมือนกัน'
+					'text' =>'1. The Pizza company โทร 1112
+					2. Pizza Hut โทร 1150 แล้วกด 2'
 				];
 			
-			}else if((eregi ( "ลืมเค้าไม่ได้", $text ))or(eregi ( "ทำไมถึงโดนทิ้ง", $text ))){
+			}else if((eregi ( "ดับเพลิง", $text ))or(eregi ( "ไฟไหม้", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'ผู้หญิงก็แบบนี้ล่ะครับ ตาบอดกันทั้งนั้น'
+					'text' =>'รีบโทรเลย 199'
 				];	
+			}else if((eregi ( "ช่างซ่อมเครื่องใช้ไฟฟ้า", $text ))or(eregi ( "ซ่อมของใช้", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'โทรเลย 084746XXXX ในเขตเชียงใหม่ หรือ www.fixeletric.com ทั่วประเทศ'
+				];	
+			
+			}else if((eregi ( "ดับเพลิง", $text ))or(eregi ( "ไฟไหม้", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'รีบโทรเลย 199'
+				];
+			}else if((eregi ( "ซื้อสินค้า", $text ))or(eregi ( "Shopping", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'www.lazada.co.th'
+				];		
 			}else if((eregi ( "บาย", $text ))or(eregi ( "ลาก่อน", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'บายนะ! เวลาเหงาทักหา Bot นะ'
+					'text' =>'บายนะ! มีเรื่องอะไรทักหา Bot นะ'
 				];		
 			}
 			// Make a POST Request to Messaging API to reply to sender
