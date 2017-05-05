@@ -84,7 +84,7 @@ if (!is_null($events['events'])) {
 			}else if((eregi ( "บาย", $text ))or(eregi ( "ลาก่อน", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'บายนะ! เวลาเหงาทักหา Bot นะ'
+					'text' =>'บายนะ! เวลาปรึกษาทักหา Bot นะ'
 				];		
 			}
 			// Make a POST Request to Messaging API to reply to sender
