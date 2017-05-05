@@ -50,7 +50,7 @@ if (!is_null($events['events'])) {
 					'type'=>'text',
 					'text' =>'เรียกประปาโทร 1162 หรือ http://www.pwa.co.th/contactus/telephone ครับ'
 				];
-			}else if((eregi ( "หิว", $text ))or(eregi ( "สั่งไก่", $text ))or(eregi ( "อยากกินไก่", $text ))){
+			}else if((eregi ( "หิว", $text, $regs ))or(eregi ( "สั่งไก่", $text, $regs ))or(eregi ( "อยากกินไก่", $text, $regs ))){
 				$messages = [
 					'type'=>'text',
 					'text' =>'ถ้าอยากให้ใครดีกับเราเราต้องทำดีกับเขาก่อนดูครับ'
