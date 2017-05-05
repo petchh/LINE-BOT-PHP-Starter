@@ -64,16 +64,16 @@ if (!is_null($events['events'])) {
 					'type'=>'text',
 					'text' =>'โทรเลยครับ เบอร์ 1129 หรือที่ https://www.pea.co.th/ติดต่อเรา'
 				];
-			}else if((eregi ( "หน้ากากทุเรียน", $text ))or(eregi ( "The mask singer", $text ))){
+			}else if((eregi ( "ไฟไหม้", $text ))or(eregi ( "ดับเพลิง", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'ดีต่อใจฝุดๆ เพลงเพราะมาก'
+					'text' =>'โทรเลยครับ เบอร์ 199'
 				];
 				
-			}else if((eregi ( "ผู้หญิงชอบคนเลว", $text ))or(eregi ( "ทำดีไปก็เท่านั้น", $text ))){
+			}else if((eregi ( "อสังหาริมทรัพย์", $text ))or(eregi ( "ที่อยู่อาศัย", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'ผู้หญิงจิตใจลึกลับซับซ้อนยิ่งกว่าเขาวงกต คนดีๆมีก็ไม่เลือก ชอบคนเลวได้ไงไม่เข้าใจเหมือนกัน'
+					'text' =>'เลือกซื้อที่อยู่อาศัย อสังหาริมทรัพย์ หรือปรึกษาด้านต่างๆ เกี่ยวกับ Property ที่ http://www.reic.or.th/Default.aspx'
 				];
 			
 			}else if((eregi ( "ลืมเค้าไม่ได้", $text ))or(eregi ( "ทำไมถึงโดนทิ้ง", $text ))){
