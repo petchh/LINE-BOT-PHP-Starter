@@ -29,10 +29,10 @@ if (!is_null($events['events'])) {
 			];
 			
 			
-			if((eregi ( "cs442", $text ))or(eregi ( "คพ442", $text ))){
+			if((eregi ( "ตำรวจ", $text ))or(eregi ( "แจ้งตำรวจ", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'ลองไปดูในนี้นะ มีรายละเอียดอยู่ http://reg.mju.ac.th/enrollguide.htm'
+					'text' =>'โทรเลย เบอร์ 191'
 				];
 			}else if((eregi ( "Chatbot", $text, $regs ))or(eregi ( "Line bot", $text, $regs ))){
 				$messages = [
