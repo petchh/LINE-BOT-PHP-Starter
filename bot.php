@@ -45,24 +45,12 @@ if (!is_null($events['events'])) {
 					'text' =>'สวัสดีครับ
 '
 				];
-			
-				}else if((eregi ( "Chatbot", $text, $regs ))or(eregi ( "Line bot", $text, $regs ))){
+			}else if((eregi ( "อยากกลับบ้าน", $text ))or(eregi ( "คิดถึงบ้าน", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'บอท (bot) คือโปรแกรมอัตโนมัติ สำหรับทำหน้าที่อย่างใดอย่างหนึ่ง บนอินเทอร์เน็ต ซึ่งย่อมาจากคำว่าโรบอต (robot)'
+					'text' =>'จองตั๋วเครื่องบินสิครับ รถทัวร์ก็ได้นะ'
 				];
-			}else if((eregi ( "Hello", $text ))or(eregi ( "สวัสดี", $text ))){
-				$messages = [
-					'type'=>'text',
-					'text' =>'สวัสดีครับ
-'
-				];
-			}else if((eregi ( "หาช่างประปา", $text ))or(eregi ( "น้ำไม่ไหล", $text ))or(eregi ( "การประปา", $text ))){
-				$messages = [
-					'type'=>'text',
-					'text' =>'เรียกประปาโทร 1162 หรือ http://www.pwa.co.th/contactus/telephone ครับ'
-				];
-			}else if((eregi ( "หาช่างไฟ", $text ))or(eregi ( "การไฟฟ้า", $text)){
+			}else if((eregi ( "ขาดความอบอุ่น", $text, $regs ))or(eregi ( "ต้องการคนสนใจ", $text, $regs ))or(eregi ( "อยากให้มีคนสนใจ", $text, $regs ))){
 				$messages = [
 					'type'=>'text',
 					'text' =>'ถ้าอยากให้ใครดีกับเราเราต้องทำดีกับเขาก่อนดูครับ'
@@ -72,30 +60,23 @@ if (!is_null($events['events'])) {
 					'type'=>'text',
 					'text' =>'เป็นกำลังใจให้นะ พยายามเข้าล่ะ'
 				];
-			}else if((eregi ( "อยากกินไก่", $text ))or(eregi ( "โทรสั่งไก่", $text ))){
+			}else if((eregi ( "หน้ากากทุเรียน", $text ))or(eregi ( "The mask singer", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'ไก่อะไรดีล่ะ
-					1. ไก่ KFC โทร 1150 แล้วกด 1
-					2. ไก่ McDonulds โทร 1711 
-					3. ไก่ เชสเตอร์กิลล์ โทร 1125'
+					'text' =>'ดีต่อใจฝุดๆ เพลงเพราะมาก'
 				];
 				
-			}else if((eregi ( "สั่งพิซซ่า", $text ))or(eregi ( "พิซซ่า", $text ))){
+			}else if((eregi ( "ผู้หญิงชอบคนเลว", $text ))or(eregi ( "ทำดีไปก็เท่านั้น", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'1. The Pizza company โทร 1112
-					2. Pizza Hut โทร 1150 แล้วกด 2'
+					'text' =>'ผู้หญิงจิตใจลึกลับซับซ้อนยิ่งกว่าเขาวงกต คนดีๆมีก็ไม่เลือก ชอบคนเลวได้ไงไม่เข้าใจเหมือนกัน'
 				];
 			
-			}else if((eregi ( "ดับเพลิง", $text ))or(eregi ( "ไฟไหม้", $text ))){
+			}else if((eregi ( "ลืมเค้าไม่ได้", $text ))or(eregi ( "ทำไมถึงโดนทิ้ง", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'รีบโทรเลย 199'
+					'text' =>'ผู้หญิงก็แบบนี้ล่ะครับ ตาบอดกันทั้งนั้น'
 				];	
-
-				
-				
 			}else if((eregi ( "บาย", $text ))or(eregi ( "ลาก่อน", $text ))){
 				$messages = [
 					'type'=>'text',
