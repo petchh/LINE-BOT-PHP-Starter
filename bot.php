@@ -90,8 +90,14 @@ if (!is_null($events['events'])) {
 			}else if((eregi ( "ช่างซ่อมเครื่องใช้ไฟฟ้า", $text ))or(eregi ( "ช่างซ่อมของใช้", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'โทรไปที่เบอร์ 084746XXXX ในเชียงใหม่ หรือ www.fixeletric.com ทั่วประเทศ'
+					'text' =>'โทรไปที่เบอร์ 0847460000 ในเชียงใหม่ หรือ www.fixeletric.com ทั่วประเทศ'
 				];
+			}else if((eregi ( "ซื้อสินค้า", $text ))or(eregi ( "Shopping", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'www.lazada.co.th หรือโทร 020180000 ทั่วประเทศ'
+				];		
+
 			}else if((eregi ( "บาย", $text ))or(eregi ( "ลาก่อน", $text ))){
 				$messages = [
 					'type'=>'text',
