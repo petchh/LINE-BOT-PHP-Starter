@@ -53,9 +53,13 @@ if (!is_null($events['events'])) {
 			}else if((eregi ( "หิว", $text, $regs ))or(eregi ( "สั่งไก่", $text, $regs ))or(eregi ( "อยากกินไก่", $text, $regs ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'ถ้าอยากให้ใครดีกับเราเราต้องทำดีกับเขาก่อนดูครับ'
+					'text' =>'กินไก่อะไรดีล่ะ ?
+					1. ไก่ KFC โทร 1150 แล้วกด 1
+					2. ไก่ McDonulds โทร 1711 
+					3. ไก่ เชสเตอร์กิลล์ โทร 1125
+'
 				];
-			}else if((eregi ( "โดนเท", $text ))or(eregi ( "ผู้หญิงทิ้ง", $text ))){
+			}else if((eregi ( "", $text ))or(eregi ( "ผู้หญิงทิ้ง", $text ))){
 				$messages = [
 					'type'=>'text',
 					'text' =>'เป็นกำลังใจให้นะ พยายามเข้าล่ะ'
