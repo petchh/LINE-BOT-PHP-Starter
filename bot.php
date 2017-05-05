@@ -76,6 +76,12 @@ if (!is_null($events['events'])) {
 					'text' =>'เลือกซื้อที่อยู่อาศัย อสังหาริมทรัพย์ หรือปรึกษาด้านต่างๆ เกี่ยวกับ Property ที่ http://www.reic.or.th/Default.aspx'
 				];
 			
+			}else if((eregi ( "สั่งพิซซ่า", $text ))or(eregi ( "พิซซ่า", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'สั่งพิซซ่ามาทานร้านไหนดี ?
+					1.The Pizza โทร 1112 หรือ 2.Pizza Hut โทร 1150 กด 2'
+				];
 			}else if((eregi ( "ลืมเค้าไม่ได้", $text ))or(eregi ( "ทำไมถึงโดนทิ้ง", $text ))){
 				$messages = [
 					'type'=>'text',
