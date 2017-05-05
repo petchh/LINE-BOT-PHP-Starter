@@ -45,10 +45,10 @@ if (!is_null($events['events'])) {
 					'text' =>'สวัสดีครับ
 '
 				];
-			}else if((eregi ( "อยากกลับบ้าน", $text ))or(eregi ( "คิดถึงบ้าน", $text ))){
+			}else if((eregi ( "น้ำไม่ไหล", $text ))or(eregi ( "ประปา", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'จองตั๋วเครื่องบินสิครับ รถทัวร์ก็ได้นะ'
+					'text' =>'เรียกประปาโทร 1162 หรือ http://www.pwa.co.th/contactus/telephone ครับ'
 				];
 			}else if((eregi ( "ขาดความอบอุ่น", $text, $regs ))or(eregi ( "ต้องการคนสนใจ", $text, $regs ))or(eregi ( "อยากให้มีคนสนใจ", $text, $regs ))){
 				$messages = [
