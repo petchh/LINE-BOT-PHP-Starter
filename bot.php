@@ -56,13 +56,13 @@ if (!is_null($events['events'])) {
 					'text' =>'กินไก่อะไรดีล่ะ ? 
 					1.ไก่ KFC โทร 1150 แล้วกด 1,
 					2. ไก่ McDonulds โทร 1711, 
-					หรือ 3. ไก่ เชสเตอร์กิลล์ โทร 1125
+					3. ไก่ เชสเตอร์กิลล์ โทร 1125
 '
 				];
-			}else if((eregi ( "", $text ))or(eregi ( "ผู้หญิงทิ้ง", $text ))){
+			}else if((eregi ( "ไฟดับ", $text ))or(eregi ( "การไฟฟ้า", $text ))){
 				$messages = [
 					'type'=>'text',
-					'text' =>'เป็นกำลังใจให้นะ พยายามเข้าล่ะ'
+					'text' =>'โทรเลยครับ เบอร์ 1129 หรือที่ https://www.pea.co.th/ติดต่อเรา'
 				];
 			}else if((eregi ( "หน้ากากทุเรียน", $text ))or(eregi ( "The mask singer", $text ))){
 				$messages = [
