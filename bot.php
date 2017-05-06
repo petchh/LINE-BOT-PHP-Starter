@@ -59,7 +59,7 @@ if (!is_null($events['events'])) {
 					3. ไก่ เชสเตอร์กิลล์ โทร 1125
 '
 				];
-			}else if((eregi ( "ไฟดับ", $text ))or(eregi ( "การไฟฟ้า", $text ))){
+			}else if((eregi ( "ไฟดับ", $text ))or(eregi ( "ไฟฟ้า", $text ))){
 				$messages = [
 					'type'=>'text',
 					'text' =>'โทรเลยครับ เบอร์ 1129 หรือที่ https://www.pea.co.th/ติดต่อเรา'
