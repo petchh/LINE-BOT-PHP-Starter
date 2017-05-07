@@ -28,8 +28,12 @@ if (!is_null($events['events'])) {
 				'text' => $ans
 			];
 			
-			
-			if((eregi ( "ตำรวจ", $text ))or(eregi ( "แจ้งตำรวจ", $text ))){
+			if((eregi ( "cs442", $text ))or(eregi ( "คพ442", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'ลองไปดูในนี้นะ มีรายละเอียดอยู่ http://reg.mju.ac.th/enrollguide.htm'
+				];
+			}else if((eregi ( "ตำรวจ", $text ))or(eregi ( "แจ้งตำรวจ", $text ))){
 				$messages = [
 					'type'=>'text',
 					'text' =>'โทรเลย เบอร์ 191'
@@ -97,7 +101,49 @@ if (!is_null($events['events'])) {
 					'type'=>'text',
 					'text' =>'www.lazada.co.th หรือโทร 020180000 ทั่วประเทศ'
 				];		
-
+			}else if((eregi ( "Chatbot", $text, $regs ))or(eregi ( "Line bot", $text, $regs ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'บอท (bot) คือโปรแกรมอัตโนมัติ สำหรับทำหน้าที่อย่างใดอย่างหนึ่ง บนอินเทอร์เน็ต ซึ่งย่อมาจากคำว่าโรบอต (robot)'
+				];
+			}else if((eregi ( "Hello", $text ))or(eregi ( "สวัสดี", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'สวัสดีครับ
+'
+				];
+			}else if((eregi ( "อยากกลับบ้าน", $text ))or(eregi ( "คิดถึงบ้าน", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'จองตั๋วเครื่องบินสิครับ รถทัวร์ก็ได้นะ'
+				];
+			}else if((eregi ( "ขาดความอบอุ่น", $text, $regs ))or(eregi ( "ต้องการคนสนใจ", $text, $regs ))or(eregi ( "อยากให้มีคนสนใจ", $text, $regs ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'ถ้าอยากให้ใครดีกับเราเราต้องทำดีกับเขาก่อนดูครับ'
+				];
+			}else if((eregi ( "โดนเท", $text ))or(eregi ( "ผู้หญิงทิ้ง", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'เป็นกำลังใจให้นะ พยายามเข้าล่ะ'
+				];
+			}else if((eregi ( "หน้ากากทุเรียน", $text ))or(eregi ( "The mask singer", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'ดีต่อใจฝุดๆ เพลงเพราะมาก'
+				];
+				
+			}else if((eregi ( "ผู้หญิงชอบคนเลว", $text ))or(eregi ( "ทำดีไปก็เท่านั้น", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'ผู้หญิงจิตใจลึกลับซับซ้อนยิ่งกว่าเขาวงกต คนดีๆมีก็ไม่เลือก ชอบคนเลวได้ไงไม่เข้าใจเหมือนกัน'
+				];
+			
+			}else if((eregi ( "ลืมเค้าไม่ได้", $text ))or(eregi ( "ทำไมถึงโดนทิ้ง", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'ผู้หญิงก็แบบนี้ล่ะครับ ตาบอดกันทั้งนั้น'
+				];	
 			}else if((eregi ( "บาย", $text ))or(eregi ( "ลาก่อน", $text ))){
 				$messages = [
 					'type'=>'text',
