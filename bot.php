@@ -149,7 +149,18 @@ if (!is_null($events['events'])) {
 					'type'=>'text',
 					'text' =>'บายนะ! เวลาปรึกษาทักหา Bot นะ :)'
 				];		
-			}
+			}else if((eregi ( "เปิดประตู", $text ))or(eregi ( "open", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'Open, Ok'
+				];
+			
+			}else if((eregi ( "ปิดประตู", $text ))or(eregi ( "close", $text ))){
+				$messages = [
+					'type'=>'text',
+					'text' =>'Close, Ok'
+				];
+			}	
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
