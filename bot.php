@@ -149,13 +149,13 @@ if (!is_null($events['events'])) {
 					'type'=>'text',
 					'text' =>'บายนะ! เวลาปรึกษาทักหา Bot นะ :)'
 				];		
-			}else if((eregi ( "เปิดประตู", $text ))or(eregi ( "open", $text )or(eregi ( "open door", $text ))){
+			}else if((eregi ( "เปิดประตู", $text ))or(eregi ( "open", $text ))){
 				$messages = [
 					'type'=>'text',
 					'text' =>'Open, Ok'
 				];
 			
-			}else if((eregi ( "ปิดประตู", $text ))or(eregi ( "close", $text )or(eregi ( "close door", $text ))){
+			}else if((eregi ( "ปิดประตู", $text ))or(eregi ( "close", $text ))){
 				$messages = [
 					'type'=>'text',
 					'text' =>'Close, Ok'
